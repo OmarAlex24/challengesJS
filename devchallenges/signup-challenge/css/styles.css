@@ -54,20 +54,12 @@ body {
   background-attachment: fixed;
   background-size: 50px 50px;
   overflow-x: hidden;
-
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
 }
-
 main {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-
   height: 100vh;
-  width: 100vw;
 }
 
 /*! Mobile first */
@@ -88,7 +80,7 @@ main {
   background-color: var(--bg);
   padding: 2rem;
   width: 80%;
-  max-width: 500px;
+  max-width: 550px;
 
   display: flex;
   flex-direction: column;
@@ -130,7 +122,7 @@ main {
     outline: none;
   }
   .input::placeholder {
-    color: var(--white);
+    color: #8993a4;
   }
   .input:focus {
     border: 2px solid var(--lg-purple);
@@ -150,6 +142,10 @@ main {
 
   background-color: var(--dk-purple);
   color: var(--white);
+}
+.btn-register:hover {
+  background-color: var(--lg-purple);
+  cursor: pointer;
 }
 
 .selector {
@@ -179,9 +175,25 @@ main {
   }
 
   .selected {
-    background-color: var(--lg-purple);
     outline: 6px solid rgba(101, 44, 209, 0.4);
   }
+  .seen {
+    background-color: var(--lg-purple);
+  }
+}
+
+.btn-topics {
+  height: 50px;
+  border-radius: 15px;
+  border-style: none;
+  border: 1px solid var(--card-bg);
+  background-color: var(--carg-bg2);
+  color: #8993a4;
+  font-size: 16px;
+}
+
+.seleccionado {
+  background-color: violet;
 }
 
 @media screen and (min-width: 720px) {
